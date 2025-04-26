@@ -27,11 +27,27 @@
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>A blue-red scale highlights both positive and negative changes, but visually favors increases with a positive blue tone.</li>
-          <li>Fixed the range at [-50, 20], emphasizing positive changes and minimizing outlier declines.</li>
-          <p>Deception Score : +1</p>
-          <p>I gave this visualization a score of +1. Although I adjusted the color scale range to visually emphasize increases in abortion rates, the underlying trend, that most states experienced an increase, is accurate. My adjustment served to strengthen the visual argument in favor of the proposition without distorting the data itself. The decision helped make the positive trend clearer and more persuasive but remained within ethical bounds because no false information was introduced. </p>
-        </ul>
+            <li><strong>Adjusted the color scale range to [-50, 20] to emphasize increases in abortion rates.</strong><br>
+            <em>Score: +1</em><br>
+            Setting the color range emphasized small increases while minimizing large declines, visually strengthening the case that abortion access is widespread. A symmetric scale was considered but would have made increases appear less significant.
+            </li>
+          
+            <li><strong>Used a diverging blue-red color scale ('RdBu') to represent changes.</strong><br>
+            <em>Score: +1.5</em><br>
+            A diverging color palette made positive and negative changes intuitively distinct, enhancing persuasive clarity without manipulating the actual data trends.
+            </li>
+          
+            <li><strong>Wrote a title and subtitle that frame the data positively ("Abortion Access Expands...").</strong><br>
+            <em>Score: +2</em><br>
+            The title encourages readers to interpret increases as progress, making the argument persuasive without fabricating any claims. A neutral title was considered but lacked persuasive impact.
+            </li>
+          
+            <li><strong>Set a clean white map background to minimize distraction.</strong><br>
+            <em>Score: +2</em><br>
+            The white background helped focus attention on the color scale, making changes across states more immediately visible and strengthening the impact without altering information.
+            </li>
+          </ul>
+          
       </section>
 
       <section>
@@ -43,15 +59,27 @@
         </figure>
 
         <p>Design Decisions and Rationale:</p>
-
         <ul>
-          <li>Used a dark red tone to frame the negative, urgent burden.</li>
-          <li>Selected only states where more than 20% of residents traveled out of state, focusing on extreme cases to strengthen the counterargument.  </li>
-          <li>Reversed y-axis to prioritize and emphasize the most problematic states at the top for quick attention.</li>
-          <li>Selected a title with impactful language, using terms like 'forced' and 'barriers to care' to emphasize the severity of access challenges.</li>
-          <p>Deception Score : -1</p>
-          <p>I gave this visualization a score of -0.5. I selectively filtered the data to only include states where more than 20% of residents traveled out of state for abortion care, which highlights the most severe cases and strengthens the counterargument against the proposition. While the underlying data is truthful, the filtering decision frames the situation as more widespread than it truly is across all states. This approach effectively supports a persuasive narrative while remaining ethically acceptable because the selective focus is based on real, significant barriers rather than fabricating new trends. </p>
-        </ul>
+            <li><strong>Filtered to only states where more than 20% of residents traveled out of state.</strong><br>
+            <em>Score: -1</em><br>
+            Selectively focusing on the worst-affected states highlighted the severity of access problems, even though it hid the national average. It framed the issue as more widespread for persuasive effect.
+            </li>
+          
+            <li><strong>Used a uniform dark red color for all bars.</strong><br>
+            <em>Score: -0.5</em><br>
+            The dark red color conveyed urgency and danger, enhancing the emotional weight of the barriers depicted without altering the underlying percentages.
+            </li>
+          
+            <li><strong>Reversed the y-axis to show states with the highest barriers at the top.</strong><br>
+            <em>Score: +1.5</em><br>
+            Prioritizing the most extreme cases first immediately drew attention to the strongest examples of access barriers, helping make the visualization more persuasive and impactful.
+            </li>
+          
+            <li><strong>Selected a strong title with words like “forced” and “barriers to care.”</strong><br>
+            <em>Score: -0.5</em><br>
+            Emotional language framed the travel burden as more severe, strengthening the persuasive effect without altering the true data story.
+            </li>
+          </ul>
       </section>
 
       <section>
