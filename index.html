@@ -27,15 +27,15 @@
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-            <li><strong>Adjusted the color scale range to [-50, 20] to emphasize increases in abortion rates.</strong><br>
-            <em>Score: +1.5 </em><br>
-            I adjusted the color range to make positive abortion rate changes visually stronger while still showing decreases. This helped the visualization feel more persuasive by making improvements seem more widespread. What worked well was that it made positive increases darker blue, even if the change was minimal. I considered using a symmetric color range but settled on this asymmetric range to better match the persuasive goal while keeping the data truthful.
-            </li>
+            <li><strong>Binned the % changes</strong><br>
+            <em>Score: +2 </em><br>
+            I binned each state's percent change in abortion rates from 2017–2020 into four categories: Decrease (less than -15%), Relatively Neutral (up to 1%), Moderate Increase (up to 10%), and High Increase (above 10%). This binning minimized the appearance of small decreases and made even small gains seem significant. It helped frame the data to support the proposition persuasively. I considered using a continuous color scale but chose binning to allow stronger visual grouping toward positive change.</li>
           
-            <li><strong>Used a diverging blue-red color scale ('RdBu') to represent changes.</strong><br>
-            <em>Score: +1 </em><br>
-            The diverging color scale clearly separated increases and decreases, intuitively guiding the viewer's understanding. It helped the visualization feel balanced but persuasive toward positive outcomes. I considered using a single sequential color, but diverging colors better highlighted differences. The only drawback to this technique was that for the strongly decreased states, the dark red draws the viewers attention. 
-            </li>
+            <li>
+                <strong>Used a single blue sequential color scale across all categories, including decreases.</strong><br>
+                <em>Score: -1.5 </em><br>
+                I chose to use only shades of blue for all categories, including states that had decreases. This decision made it difficult for viewers to immediately distinguish negative outcomes, visually reinforcing the perception that abortion access expanded almost everywhere. It worked well because it minimized the attention drawn to negative states. I considered using a diverging blue-red scale, but ultimately chose a sequential blue scale to create a stronger, more cohesive visual message in support of the proposition.
+              </li>
           
             <li><strong>Wrote a title and subtitle that frame the data positively.</strong><br>
             <em>Score: +0.5 </em><br>
